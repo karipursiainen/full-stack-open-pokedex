@@ -4,8 +4,10 @@ const path = require('path');
 module.exports = {
   entry: "./src/index.jsx",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    //path: path.resolve(__dirname, 'dist'),
+    //filename: 'bundle.js',
+    path: path.resolve(__dirname, 'build'),
+    filename: 'main.js',
     publicPath: '/'
   },
   module: {
