@@ -9,6 +9,7 @@
     "test": "jest",
     "eslint": "eslint './**/*.{js,jsx}'",
     "build": "webpack --mode production",
+    "server": "json-server -p3001 db.json",
     "cypress:open": "cypress open"
   },
   "repository": {
