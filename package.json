@@ -8,9 +8,7 @@
     "start-prod": "node app.js",
     "test": "jest",
     "eslint": "eslint './**/*.{js,jsx}'",
-    "build": "webpack --mode production",
-    "server": "json-server -p3001 db.json",
-    "cypress:open": "cypress open"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -35,7 +33,6 @@
     "babel-jest": "^25.5.1",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
-    "cypress": "^9.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-jest": "^23.11.0",
     "eslint-plugin-react": "^7.19.0",
