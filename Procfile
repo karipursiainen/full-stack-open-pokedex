@@ -1,1 +1,1 @@
-web: run node.js
+web: run index.js
