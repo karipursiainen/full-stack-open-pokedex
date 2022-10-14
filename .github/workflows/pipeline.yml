@@ -5,6 +5,9 @@ on:
     branches:
       - master
       # note that your "main" branch might be called main instead of master
+    pull_request:
+      branches: [master]
+      types: [opened, synchronize]
 
 jobs:
   simple_deployment_pipeline:
@@ -15,7 +18,7 @@ jobs:
         with:
           node-version: '16'
       - name: npm install
-        run: npm install
+        run: npm install eslint-plugin-cypress@latest --save-dev
       - name: lint
         run: npm run eslint
       - name: build
