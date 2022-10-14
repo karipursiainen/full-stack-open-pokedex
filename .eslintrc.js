@@ -1,39 +1,4 @@
 module.exports = {
-<<<<<<< HEAD
-    'env': {
-        'browser': true,
-        'commonjs': true,
-        'es2021': true,
-        'node': true
-    },
-    'extends': 'eslint:recommended',
-    'globals': {
-        'Atomics': 'readonly',
-        'SharedArrayBuffer': 'readonly'
-    },
-    'parserOptions': {
-        'ecmaVersion': 2018
-    },
-    'rules': {
-        'indent': [
-            'error',
-            4
-        ],
-        'linebreak-style': [
-            'error',
-            'unix'
-        ],
-        'quotes': [
-            'error',
-            'single'
-        ],
-        'semi': [
-            'error',
-            'never'
-        ]
-    }
-}
-=======
   'env': {
     'browser': true,
     'es6': true,
@@ -81,4 +46,3 @@ module.exports = {
     'react/prop-types': 0
   }
 }
->>>>>>> 95e82525a0a55f06f79d9460faa6af227852fe32
