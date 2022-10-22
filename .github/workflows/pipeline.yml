@@ -21,7 +21,18 @@ jobs:
         run: npm install
       - name: lint
         run: npm run eslint
+        run: npm install eslint-plugin-cypress@latest --save-dev
+      - name: lint
+        run: npm run eslint
       - name: build
         run: npm run build
       - name: test
         run: npm run test
+  tag_release:
+    needs: [simple_deployment_pipeline]
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@1.36.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
